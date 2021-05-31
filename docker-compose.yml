@@ -3,7 +3,7 @@ version: '3'
 services:
 
   api:
-    container_name: flask_api_02
+    
     restart: always
     build: ./api
     volumes: ['./api:/api']
@@ -16,7 +16,7 @@ services:
     
 
   nginx:
-    container_name: nginx_02
+    
     restart: always
     build: ./nginx
     networks:
